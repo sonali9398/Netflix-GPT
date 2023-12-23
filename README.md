@@ -10,3 +10,4 @@ used tailwind in bg alongwith w-screen and aspect video
 building secondary component - it may consists: popular, top playing, trending
 created custom hooks for all trending, popular, upcoming movies..
 made browse page interactive
+crating gptstore to enable gpt feature

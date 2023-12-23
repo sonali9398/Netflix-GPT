@@ -6,10 +6,16 @@ import { addUser, removeUser } from '../utils/userSlice';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { NETFLIX_LOGO, USER_IMG } from '../utils/constants';
+import { toggleSearchView } from '../utils/gptSlice';
 
 const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const handleGptSearchClick = () =>{
+    //toggle search button
+    dispatch(toggleSearchView()); 
+  }
 
   const handleSignOut = () =>{
     signOut(auth).then(() => {
@@ -42,7 +48,11 @@ const Header = () => {
             src={NETFLIX_LOGO}
         />
         <div className='flex p-2 '>
-          <img className='w-8 h-8 m-2 rounded-md shadow-lg'
+          <button className='py-2 px-4 m-2 bg-purple-900 rounded-md text-white'
+            onClick={handleGptSearchClick}>
+            GPT Search
+          </button>
+          <img className='w-10 h-10 m-2 rounded-md shadow-lg'
             alt='userImg'
             src={USER_IMG}
           />

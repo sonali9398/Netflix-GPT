@@ -3,11 +3,11 @@ const lang = {
         search : 'Search',
         getSearchPlaceholder : "what's on your mind??",
     },
-    hindi :{
+    hin :{
         search : 'खोज',
         getSearchPlaceholder: "आपके दिमाग में क्या है??"
     },
-    spanish :{
+    span :{
         search :"buscar",
         getSearchPlaceholder:"¿¿Qué tienes en mente??"
     }

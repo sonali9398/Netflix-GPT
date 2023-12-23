@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { addUser, removeUser } from '../utils/userSlice'; 
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { NETFLIX_LOGO, USER_IMG } from '../utils/constants';
+import { NETFLIX_LOGO, SUPPORTED_LANGUAGES, USER_IMG } from '../utils/constants';
 import { toggleSearchView } from '../utils/gptSlice';
 
 const Header = () => {
@@ -48,6 +48,11 @@ const Header = () => {
             src={NETFLIX_LOGO}
         />
         <div className='flex p-2 '>
+          <select className='p-2 bg-slate-300 rounded-md m-2'>
+            {SUPPORTED_LANGUAGES.map((lang)=>(
+              <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>
+            ))}
+          </select>
           <button className='py-2 px-4 m-2 bg-purple-900 rounded-md text-white'
             onClick={handleGptSearchClick}>
             GPT Search

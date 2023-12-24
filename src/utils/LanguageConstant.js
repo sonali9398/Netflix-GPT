@@ -12,3 +12,5 @@ const lang = {
         getSearchPlaceholder:"¿¿Qué tienes en mente??"
     }
 }
+
+export default lang

@@ -14,8 +14,10 @@ creating gptstore to enable gpt feature
 GPT search bar
 added multi-language options in search bar
 integrate GPT APIs
-get open API key and create
- 
+get open API key and created search results
+nested search results // fetched multiple search results
+reuse movielist component in search bar
+used memoize technique to reduce api call in all hooks
 
 
 

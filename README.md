@@ -11,5 +11,12 @@ building secondary component - it may consists: popular, top playing, trending
 created custom hooks for all trending, popular, upcoming movies..
 made browse page interactive
 creating gptstore to enable gpt feature
-added multi-language options in saerch bar
+GPT search bar
+added multi-language options in search bar
+integrate GPT APIs
+get open API key and create
+ 
 
+
+
+key areas to focus - gpt is not fetching results | 

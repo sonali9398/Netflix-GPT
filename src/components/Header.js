@@ -50,12 +50,13 @@ const Header = () => {
       return () => unsunbscribe();
 }, []);
   return (
-    <div className='absolute w-full px-10 py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
-        <img className='w-44'
+    <div className='absolute w-full px-10 py-2 bg-gradient-to-b from-black z-10 flex justify-between
+     lg:bg-black sm:bg-blue-900 md:bg-green-900 '>
+        <img className='w-44 mx-auto md:mx-0'
             alt='logo'
             src={NETFLIX_LOGO}
         />
-        <div className='flex p-2 '>
+        <div className='flex p-2 justify-between'>
           {showGptSearch && (
           <select className='p-2 bg-slate-300 rounded-md m-2' onChange={handleLanguageChange}>
             {SUPPORTED_LANGUAGES.map((lang)=>(
@@ -68,7 +69,7 @@ const Header = () => {
             onClick={handleGptSearchClick}>
             {showGptSearch ? "Home Page" : "Gpt Search"}
           </button>
-          <img className='w-10 h-10 m-2 rounded-md shadow-lg'
+          <img className='hidden md:block w-10 h-10 m-2 rounded-md shadow-lg'
             alt='userImg'
             src={USER_IMG}
           />

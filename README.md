@@ -16,9 +16,10 @@ added multi-language options in search bar
 integrate GPT APIs
 get open API key and created search results
 nested search results // fetched multiple search results
+fetched gpt movie suggestion
 reuse movielist component in search bar
 used memoize technique to reduce api call in all hooks
-
-
+adding .env file and upload in gitignore
+updated media queries for more responsiveness
 
 key areas to focus - gpt is not fetching results | 
